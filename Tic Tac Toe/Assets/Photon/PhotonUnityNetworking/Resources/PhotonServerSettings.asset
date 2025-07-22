@@ -52,5 +52,5 @@ MonoBehaviour:
   - RPC_LobbyCOdeCreated
   - RPC_LobbyCodeCreated
   DisableAutoOpenWizard: 1
-  ShowSettings: 0
+  ShowSettings: 1
   DevRegionSetOnce: 1

@@ -1,6 +1,5 @@
 using TicTacToe.Utility;
 using TicTacToe.Utility.Events;
-using Unity.Netcode;
 using UnityEngine;
 
 namespace TicTacToe.Player

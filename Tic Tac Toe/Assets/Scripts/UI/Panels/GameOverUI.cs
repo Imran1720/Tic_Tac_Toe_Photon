@@ -2,7 +2,6 @@ using TicTacToe.Core;
 using TicTacToe.Player;
 using TicTacToe.Utility.Events;
 using TMPro;
-using Unity.Netcode;
 using UnityEngine;
 using UnityEngine.UI;
 

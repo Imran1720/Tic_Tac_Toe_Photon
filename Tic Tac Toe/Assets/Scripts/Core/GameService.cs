@@ -42,10 +42,10 @@ namespace TicTacToe.Core
             eventService = new EventService();
             soundService = new SoundService(this, audioClipSO);
             boardService = new BoardService(boardPrefab, transform, gridData, eventService);
-
             playerService = new PlayerService(transform, eventService, playerView, winDataSO);
-
             uiService.InitilizeService(eventService, this);
+
+            playerService.StartOfflineMode();
         }
 
         public EventService GetEventService() => eventService;

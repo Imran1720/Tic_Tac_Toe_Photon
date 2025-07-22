@@ -1,10 +1,4 @@
-using Photon.Pun;
-using System;
-using System.Collections.Generic;
-using TicTacToe.Core;
-using TicTacToe.Utility;
 using TicTacToe.Utility.Events;
-using Unity.Netcode;
 using UnityEngine;
 
 namespace TicTacToe.Player
@@ -26,5 +20,7 @@ namespace TicTacToe.Player
 
         public PlayerType GetLocalPlayerType() => playerController.GetLocalPlayerType();
         public PlayerType GetCurrentPlayablePlayer() => playerController.GetCurrentPlayablePlayer();
+
+        public void StartOfflineMode() => playerView.StartOfflineGame();
     }
 }

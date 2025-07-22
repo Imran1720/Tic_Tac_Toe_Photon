@@ -28,12 +28,14 @@ namespace TicTacToe.Player
             AddEventListeners();
             OnNetworkReady(controller);
 
-            Debug.Log(playerController.GetCurrentPlayablePlayer());
-            Debug.Log(playerController.GetLocalPlayerType());
 
+        }
+
+        public void StartOfflineGame()
+        {
             if (PhotonNetwork.OfflineMode)
             {
-                RPC_TriggerGameStartRpc();
+                photonView.RPC("RPC_TriggerGameStartRpc", Photon.Pun.RpcTarget.All);
             }
         }
 
@@ -58,7 +60,7 @@ namespace TicTacToe.Player
         {
             int localPlayerID = PhotonNetwork.LocalPlayer.ActorNumber;
             playerController.OnNetworkSpawn(localPlayerID);
-            RPC_UpdateCurrentPlayer(PlayerType.CROSS);
+            photonView.RPC("RPC_UpdateCurrentPlayer", Photon.Pun.RpcTarget.All, PlayerType.CROSS);
         }
 
         private void AddEventListeners()
@@ -126,7 +128,6 @@ namespace TicTacToe.Player
         [PunRPC]
         private void RPC_TriggerGameStartRpc()
         {
-            Debug.Log("Game Start triggered");
             eventService.OnGameStarted.InvokeEvent(playerController.GetLocalPlayerType());
         }
 
