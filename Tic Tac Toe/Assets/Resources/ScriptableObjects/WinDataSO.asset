@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 649d62f3d72ceaa47a81b8e10c79c69e, type: 3}
+  m_Name: WinDataSO
+  m_EditorClassIdentifier: 
+  winDataList:
+  - winGridPair:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 0, y: 2}
+    centerGrid: {x: 0, y: 1}
+    Orientation: 0
+  - winGridPair:
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    - {x: 1, y: 2}
+    centerGrid: {x: 1, y: 1}
+    Orientation: 0
+  - winGridPair:
+    - {x: 2, y: 0}
+    - {x: 2, y: 1}
+    - {x: 2, y: 2}
+    centerGrid: {x: 2, y: 1}
+    Orientation: 0
+  - winGridPair:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 2, y: 0}
+    centerGrid: {x: 1, y: 0}
+    Orientation: 90
+  - winGridPair:
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    - {x: 2, y: 1}
+    centerGrid: {x: 1, y: 1}
+    Orientation: 90
+  - winGridPair:
+    - {x: 0, y: 2}
+    - {x: 1, y: 2}
+    - {x: 2, y: 2}
+    centerGrid: {x: 1, y: 2}
+    Orientation: 90
+  - winGridPair:
+    - {x: 0, y: 0}
+    - {x: 1, y: 1}
+    - {x: 2, y: 2}
+    centerGrid: {x: 1, y: 1}
+    Orientation: -45
+  - winGridPair:
+    - {x: 0, y: 2}
+    - {x: 1, y: 1}
+    - {x: 2, y: 0}
+    centerGrid: {x: 1, y: 1}
+    Orientation: 45
