@@ -71,7 +71,11 @@ namespace TicTacToe.UI
 
         private void CloseGame()
         {
-            PhotonNetwork.Disconnect();
+            photonView.RPC("RPC_LeaveRoom", RpcTarget.All);
+        }
+        [PunRPC]
+        private void RPC_LeaveRoom()
+        {
             PhotonNetwork.LoadLevel("Lobby");
         }
     }

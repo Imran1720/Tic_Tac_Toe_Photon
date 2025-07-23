@@ -19,6 +19,9 @@ namespace TicTacToe.Player
 
         private List<Transform> spawnedObjectList;
 
+        private float turnDuration = .5f;
+        private float timer;
+
         public void InitilizeData(EventService eventService, PlayerController controller)
         {
             this.eventService = eventService;
@@ -35,6 +38,7 @@ namespace TicTacToe.Player
         {
             if (PhotonNetwork.OfflineMode)
             {
+                playerController.CreateAIController();
                 photonView.RPC("RPC_TriggerGameStartRpc", Photon.Pun.RpcTarget.All);
             }
         }
@@ -97,6 +101,25 @@ namespace TicTacToe.Player
             checkWinRpc();
         }
 
+        private void Update()
+        {
+
+            if (PhotonNetwork.OfflineMode)
+            {
+                timer -= Time.deltaTime;
+
+                if (timer <= 0 && playerController.GetCurrentPlayablePlayer() != PlayerType.NONE && playerController.GetCurrentPlayablePlayer() != playerController.GetLocalPlayerType())
+                {
+                    playerController.PerformAITurn();
+                }
+            }
+        }
+
+        public void StartAITimer()
+        {
+            timer = turnDuration;
+        }
+
         // Server RPC's
         [PunRPC]
         private void Rpc_HandleTileClick(int x, int y, PlayerType playerType)
@@ -111,6 +134,11 @@ namespace TicTacToe.Player
         private void RPC_ChangePlayerTurn(PlayerType playerType)
         {
             playerController.ChangePlayerTurn(playerType);
+        }
+
+        public void SpawnAIObject(int x, int y, PlayerType playerType)
+        {
+            SpawnObjectRpc(x, y, playerType);
         }
 
         private void SpawnObjectRpc(int x, int y, PlayerType playerType)

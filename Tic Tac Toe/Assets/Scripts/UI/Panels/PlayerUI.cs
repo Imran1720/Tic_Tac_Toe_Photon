@@ -46,10 +46,7 @@ namespace TicTacToe.UI
 
         private void OnGameStart(PlayerType playerType)
         {
-
-            Debug.Log("GameStarted");
             ShowPlayerYouText(playerType);
-
             updateArrowRpc(GameService.Instance.GetCurrentPlayablePlayer());
         }
 

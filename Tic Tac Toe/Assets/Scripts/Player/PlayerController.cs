@@ -1,3 +1,5 @@
+using Photon.Pun;
+using TicTacToe.AI;
 using TicTacToe.Utility;
 using TicTacToe.Utility.Events;
 using UnityEngine;
@@ -17,6 +19,9 @@ namespace TicTacToe.Player
 
         private int crossScore;
         private int circleScore;
+        private TicTacTieAIController ticTacTieAI;
+
+        private bool gameTied = false;
 
         public PlayerController(EventService eventService, WinDataSO winDataSO, PlayerView playerView)
         {
@@ -25,7 +30,10 @@ namespace TicTacToe.Player
             this.eventService = eventService;
 
             playerTypeGrid = new PlayerType[3, 3];
+
         }
+
+        public void CreateAIController() => ticTacTieAI = new TicTacTieAIController(playerTypeGrid, .5f,winDataSO);
 
         public void OnNetworkSpawn(int localClientId)
         {
@@ -47,6 +55,26 @@ namespace TicTacToe.Player
             playerTypeGrid[grid.x, grid.y] = playerType;
 
             eventService.OnPlayerClickDetected.InvokeEvent(grid, playerType);
+
+            if (currentPlayablePlayerType != localPlayerType && PhotonNetwork.OfflineMode)
+            {
+                playerView.StartAITimer();
+            }
+        }
+
+        public void PerformAITurn()
+        {
+
+            if (!IsGameOver())
+            {
+                Vector2Int aiMove = ticTacTieAI.GetMove();
+
+                playerTypeGrid[aiMove.x, aiMove.y] = PlayerType.CIRCLE;
+
+                playerView.SpawnAIObject(aiMove.x, aiMove.y, PlayerType.CIRCLE);
+                ChangePlayerTurn(PlayerType.CIRCLE);
+                checkWin();
+            }
         }
 
         public void checkWin()
@@ -95,6 +123,11 @@ namespace TicTacToe.Player
 
         public void OnRematch()
         {
+            if (PhotonNetwork.OfflineMode)
+            {
+                ticTacTieAI.InitializePriorityGrid();
+            }
+            gameTied = false;
             ResetGrid();
             SetCurrentPlayablePlayer(nextPlayer);
         }
@@ -163,7 +196,17 @@ namespace TicTacToe.Player
                 }
             }
 
+            gameTied = true;
             return true;
+        }
+
+        public bool IsGameOver()
+        {
+            if (gameTied || currentPlayablePlayerType == PlayerType.NONE)
+            {
+                return true;
+            }
+            return false;
         }
 
         private void ResetGrid()

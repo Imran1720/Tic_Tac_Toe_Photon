@@ -45,7 +45,10 @@ namespace TicTacToe.Core
             playerService = new PlayerService(transform, eventService, playerView, winDataSO);
             uiService.InitilizeService(eventService, this);
 
-            playerService.StartOfflineMode();
+            if (PhotonNetwork.OfflineMode)
+            {
+                playerService.StartOfflineMode();
+            }
         }
 
         public EventService GetEventService() => eventService;
