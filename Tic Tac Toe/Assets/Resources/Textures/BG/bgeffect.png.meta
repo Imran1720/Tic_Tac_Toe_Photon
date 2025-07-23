@@ -1,0 +1,2145 @@
+fileFormatVersion: 2
+guid: 1aeb8028fcbf9074f9444d05fb158762
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7859156154148126583
+    second: bgeffect_0
+  - first:
+      213: 6869177652041633294
+    second: bgeffect_1
+  - first:
+      213: 6547692866252722648
+    second: bgeffect_2
+  - first:
+      213: -3403713365400907108
+    second: bgeffect_3
+  - first:
+      213: 1583109543485609735
+    second: bgeffect_4
+  - first:
+      213: -9066838850929127666
+    second: bgeffect_5
+  - first:
+      213: -2108341995849594605
+    second: bgeffect_6
+  - first:
+      213: 4737537704674198594
+    second: bgeffect_7
+  - first:
+      213: 1215152253453772835
+    second: bgeffect_8
+  - first:
+      213: 5438123983808667207
+    second: bgeffect_9
+  - first:
+      213: 7358111640369602219
+    second: bgeffect_10
+  - first:
+      213: -3798870775925038405
+    second: bgeffect_11
+  - first:
+      213: 4425579082874586834
+    second: bgeffect_12
+  - first:
+      213: 474703695545218309
+    second: bgeffect_13
+  - first:
+      213: 5642640809275946702
+    second: bgeffect_14
+  - first:
+      213: -7266843715197990564
+    second: bgeffect_15
+  - first:
+      213: 6926927267706562975
+    second: bgeffect_16
+  - first:
+      213: -5645510494234148746
+    second: bgeffect_17
+  - first:
+      213: 4004436565499215773
+    second: bgeffect_18
+  - first:
+      213: -4378696567361960971
+    second: bgeffect_19
+  - first:
+      213: 5316048987769924142
+    second: bgeffect_20
+  - first:
+      213: 6411157685521735127
+    second: bgeffect_21
+  - first:
+      213: -7041046586001243176
+    second: bgeffect_22
+  - first:
+      213: 8143634534741747530
+    second: bgeffect_23
+  - first:
+      213: 4850627651530713453
+    second: bgeffect_24
+  - first:
+      213: 1963076915624111362
+    second: bgeffect_25
+  - first:
+      213: 8355429241140304707
+    second: bgeffect_26
+  - first:
+      213: 1573134067054902993
+    second: bgeffect_27
+  - first:
+      213: 8822119036271182546
+    second: bgeffect_28
+  - first:
+      213: -4178381238004591609
+    second: bgeffect_29
+  - first:
+      213: 6379858078081104628
+    second: bgeffect_30
+  - first:
+      213: 6972983078221886843
+    second: bgeffect_31
+  - first:
+      213: 7822855225906287479
+    second: bgeffect_32
+  - first:
+      213: 9040427747982977207
+    second: bgeffect_33
+  - first:
+      213: -6643671911160850303
+    second: bgeffect_34
+  - first:
+      213: 5833244425366389044
+    second: bgeffect_35
+  - first:
+      213: 6819117624386060352
+    second: bgeffect_36
+  - first:
+      213: -5552405863903414502
+    second: bgeffect_37
+  - first:
+      213: -6083649230662065153
+    second: bgeffect_38
+  - first:
+      213: -2677192504990180921
+    second: bgeffect_39
+  - first:
+      213: -3318761869950245520
+    second: bgeffect_40
+  - first:
+      213: -7530710852041065
+    second: bgeffect_41
+  - first:
+      213: 3697651227482969047
+    second: bgeffect_42
+  - first:
+      213: 5657047025690263492
+    second: bgeffect_43
+  - first:
+      213: -6627150096822870449
+    second: bgeffect_44
+  - first:
+      213: 5368485599504331602
+    second: bgeffect_45
+  - first:
+      213: -899008271978845158
+    second: bgeffect_46
+  - first:
+      213: 3652757815919149606
+    second: bgeffect_47
+  - first:
+      213: -4994329375183712915
+    second: bgeffect_48
+  - first:
+      213: 3631356128722412835
+    second: bgeffect_49
+  - first:
+      213: 4664402319331683178
+    second: bgeffect_50
+  - first:
+      213: -4142528146367396427
+    second: bgeffect_51
+  - first:
+      213: 3225450513630282857
+    second: bgeffect_52
+  - first:
+      213: -6564566817547569324
+    second: bgeffect_53
+  - first:
+      213: 5358855548108466465
+    second: bgeffect_54
+  - first:
+      213: -4906726312568447813
+    second: bgeffect_55
+  - first:
+      213: 4937499648295562985
+    second: bgeffect_56
+  - first:
+      213: -5058054854238471522
+    second: bgeffect_57
+  - first:
+      213: -4094552049773291995
+    second: bgeffect_58
+  - first:
+      213: 480600656065176108
+    second: bgeffect_59
+  - first:
+      213: -2917551291483824318
+    second: bgeffect_60
+  - first:
+      213: 4685347928330144908
+    second: bgeffect_61
+  - first:
+      213: -5865659353342581405
+    second: bgeffect_62
+  - first:
+      213: 7731920818107401128
+    second: bgeffect_63
+  - first:
+      213: 6189308270363372672
+    second: bgeffect_64
+  - first:
+      213: 3839399830596925348
+    second: bgeffect_65
+  - first:
+      213: -6137863525222258284
+    second: bgeffect_66
+  - first:
+      213: 7444714289827011551
+    second: bgeffect_67
+  - first:
+      213: 467097294961670629
+    second: bgeffect_68
+  - first:
+      213: 4569437183942344103
+    second: bgeffect_69
+  - first:
+      213: 5951042748645466241
+    second: bgeffect_70
+  - first:
+      213: 1728838347447490535
+    second: bgeffect_71
+  - first:
+      213: 2503896087721072064
+    second: bgeffect_72
+  - first:
+      213: -333929583878286786
+    second: bgeffect_73
+  - first:
+      213: 6719534949752547141
+    second: bgeffect_74
+  - first:
+      213: 1290638758554395733
+    second: bgeffect_75
+  - first:
+      213: 6042633686670277701
+    second: bgeffect_76
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: bgeffect_0
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 945
+        width: 68
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9800dad0e1baee290800000000000000
+      internalID: -7859156154148126583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgeffect_1
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 888
+        width: 98
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0e4ef81ea8345f50800000000000000
+      internalID: 6869177652041633294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgeffect_2
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 900
+        width: 74
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d15a5f78f31eda50800000000000000
+      internalID: 6547692866252722648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgeffect_3
+      rect:
+        serializedVersion: 2
+        x: 567
+        y: 946
+        width: 67
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9297025ab493c0d0800000000000000
+      internalID: -3403713365400907108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgeffect_4
+      rect:
+        serializedVersion: 2
+        x: 684
+        y: 888
+        width: 98
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7079dfbfdb558f510800000000000000
+      internalID: 1583109543485609735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgeffect_5
+      rect:
+        serializedVersion: 2
+        x: 916
+        y: 900
+        width: 75
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0f88ae6a1e1c2280800000000000000
+      internalID: -9066838850929127666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgeffect_6
+      rect:
+        serializedVersion: 2
+        x: 1070
+        y: 945
+        width: 68
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 319c850102aadb2e0800000000000000
+      internalID: -2108341995849594605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgeffect_7
+      rect:
+        serializedVersion: 2
+        x: 1187
+        y: 888
+        width: 98
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 244002d117d1fb140800000000000000
+      internalID: 4737537704674198594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgeffect_8
+      rect:
+        serializedVersion: 2
+        x: 1420
+        y: 900
+        width: 75
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 328a02f49861dd010800000000000000
+      internalID: 1215152253453772835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgeffect_9
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 724
+        width: 182
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74e927b63f8187b40800000000000000
+      internalID: 5438123983808667207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgeffect_10
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 867
+        width: 47
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bae95ed4d834d1660800000000000000
+      internalID: 7358111640369602219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgeffect_11
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 724
+        width: 181
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb220651823b74bc0800000000000000
+      internalID: -3798870775925038405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgeffect_12
+      rect:
+        serializedVersion: 2
+        x: 815
+        y: 867
+        width: 48
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d683286ab0da6d30800000000000000
+      internalID: 4425579082874586834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgeffect_13
+      rect:
+        serializedVersion: 2
+        x: 1014
+        y: 724
+        width: 180
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 505b98afe7c769600800000000000000
+      internalID: 474703695545218309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgeffect_14
+      rect:
+        serializedVersion: 2
+        x: 1319
+        y: 867
+        width: 48
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec6f3088befae4e40800000000000000
+      internalID: 5642640809275946702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgeffect_15
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 728
+        width: 67
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c590855742cf62b90800000000000000
+      internalID: -7266843715197990564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgeffect_16
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 666
+        width: 113
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f99ed9846a3612060800000000000000
+      internalID: 6926927267706562975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgeffect_17
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 774
+        width: 49
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6700f6fdd1e17a1b0800000000000000
+      internalID: -5645510494234148746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgeffect_18
+      rect:
+        serializedVersion: 2
+        x: 715
+        y: 728
+        width: 67
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9f7a2407dd929730800000000000000
+      internalID: 4004436565499215773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgeffect_19
+      rect:
+        serializedVersion: 2
+        x: 804
+        y: 666
+        width: 113
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f30b2bdbaebb33c0800000000000000
+      internalID: -4378696567361960971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgeffect_20
+      rect:
+        serializedVersion: 2
+        x: 929
+        y: 774
+        width: 49
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2ae994836666c940800000000000000
+      internalID: 5316048987769924142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgeffect_21
+      rect:
+        serializedVersion: 2
+        x: 1218
+        y: 728
+        width: 68
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ddd98c72f109f850800000000000000
+      internalID: 6411157685521735127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgeffect_22
+      rect:
+        serializedVersion: 2
+        x: 1308
+        y: 666
+        width: 113
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d34b626f6d294e90800000000000000
+      internalID: -7041046586001243176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgeffect_23
+      rect:
+        serializedVersion: 2
+        x: 1432
+        y: 774
+        width: 49
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a47a2e76670040170800000000000000
+      internalID: 8143634534741747530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgeffect_24
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 630
+        width: 68
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d69ec2b3624e05340800000000000000
+      internalID: 4850627651530713453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgeffect_25
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 557
+        width: 102
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20d6b8ecd004e3b10800000000000000
+      internalID: 1963076915624111362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgeffect_26
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 630
+        width: 67
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34b541830a274f370800000000000000
+      internalID: 8355429241140304707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgeffect_27
+      rect:
+        serializedVersion: 2
+        x: 661
+        y: 557
+        width: 102
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1de7fd26915e4d510800000000000000
+      internalID: 1573134067054902993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgeffect_28
+      rect:
+        serializedVersion: 2
+        x: 1039
+        y: 630
+        width: 68
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d2c72b95867e6a70800000000000000
+      internalID: 8822119036271182546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgeffect_29
+      rect:
+        serializedVersion: 2
+        x: 1165
+        y: 557
+        width: 101
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 704549ce6686306c0800000000000000
+      internalID: -4178381238004591609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgeffect_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 530
+        width: 26
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fa3e6dbe1fc98850800000000000000
+      internalID: 6379858078081104628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgeffect_31
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 545
+        width: 69
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b75b93a4a2305c060800000000000000
+      internalID: 6972983078221886843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgeffect_32
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 526
+        width: 87
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 773d375716d509c60800000000000000
+      internalID: 7822855225906287479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgeffect_33
+      rect:
+        serializedVersion: 2
+        x: 804
+        y: 545
+        width: 70
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b82c18732d067d70800000000000000
+      internalID: 9040427747982977207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgeffect_34
+      rect:
+        serializedVersion: 2
+        x: 947
+        y: 526
+        width: 87
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1885403b89fecc3a0800000000000000
+      internalID: -6643671911160850303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgeffect_35
+      rect:
+        serializedVersion: 2
+        x: 1308
+        y: 545
+        width: 69
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 431cdf526e8d3f050800000000000000
+      internalID: 5833244425366389044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgeffect_36
+      rect:
+        serializedVersion: 2
+        x: 1450
+        y: 526
+        width: 62
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0400323a95f52ae50800000000000000
+      internalID: 6819117624386060352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgeffect_37
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 442
+        width: 67
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a17bd31e844e1f2b0800000000000000
+      internalID: -5552405863903414502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgeffect_38
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 385
+        width: 98
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff32f4cd149829ba0800000000000000
+      internalID: -6083649230662065153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgeffect_39
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 397
+        width: 75
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c9d8b0e993b8dad0800000000000000
+      internalID: -2677192504990180921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgeffect_40
+      rect:
+        serializedVersion: 2
+        x: 567
+        y: 442
+        width: 67
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 075218fa9a361f1d0800000000000000
+      internalID: -3318761869950245520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgeffect_41
+      rect:
+        serializedVersion: 2
+        x: 684
+        y: 385
+        width: 98
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79602cebbde35eff0800000000000000
+      internalID: -7530710852041065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgeffect_42
+      rect:
+        serializedVersion: 2
+        x: 916
+        y: 397
+        width: 75
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d3d86d4332b05330800000000000000
+      internalID: 3697651227482969047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgeffect_43
+      rect:
+        serializedVersion: 2
+        x: 1070
+        y: 442
+        width: 68
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4cfb2fb2c4ed18e40800000000000000
+      internalID: 5657047025690263492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgeffect_44
+      rect:
+        serializedVersion: 2
+        x: 1187
+        y: 385
+        width: 98
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4e5dad5912a704a0800000000000000
+      internalID: -6627150096822870449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgeffect_45
+      rect:
+        serializedVersion: 2
+        x: 1420
+        y: 397
+        width: 75
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25371449531b08a40800000000000000
+      internalID: 5368485599504331602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgeffect_46
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 221
+        width: 182
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1c20926db41683f0800000000000000
+      internalID: -899008271978845158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgeffect_47
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 363
+        width: 47
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 622846461e331b230800000000000000
+      internalID: 3652757815919149606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgeffect_48
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 221
+        width: 181
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6d40e4f4e390bab0800000000000000
+      internalID: -4994329375183712915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgeffect_49
+      rect:
+        serializedVersion: 2
+        x: 815
+        y: 363
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 325ef69c82b256230800000000000000
+      internalID: 3631356128722412835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgeffect_50
+      rect:
+        serializedVersion: 2
+        x: 1014
+        y: 221
+        width: 180
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6be54542394bb040800000000000000
+      internalID: 4664402319331683178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgeffect_51
+      rect:
+        serializedVersion: 2
+        x: 1319
+        y: 363
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b5c6b35998c286c0800000000000000
+      internalID: -4142528146367396427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgeffect_52
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 224
+        width: 67
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 964c889272a13cc20800000000000000
+      internalID: 3225450513630282857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgeffect_53
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 162
+        width: 113
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 457b2cf8249f5e4a0800000000000000
+      internalID: -6564566817547569324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgeffect_54
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 270
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 129e2a38aba7e5a40800000000000000
+      internalID: 5358855548108466465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgeffect_55
+      rect:
+        serializedVersion: 2
+        x: 715
+        y: 224
+        width: 67
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbc9b496a6ec7ebb0800000000000000
+      internalID: -4906726312568447813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgeffect_56
+      rect:
+        serializedVersion: 2
+        x: 804
+        y: 162
+        width: 113
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9eee54725c5858440800000000000000
+      internalID: 4937499648295562985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgeffect_57
+      rect:
+        serializedVersion: 2
+        x: 929
+        y: 270
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9afca6a8ed2ec9b0800000000000000
+      internalID: -5058054854238471522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgeffect_58
+      rect:
+        serializedVersion: 2
+        x: 1218
+        y: 224
+        width: 67
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5265ae6ca9a3d27c0800000000000000
+      internalID: -4094552049773291995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgeffect_59
+      rect:
+        serializedVersion: 2
+        x: 1308
+        y: 162
+        width: 113
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c22a59710cf6ba600800000000000000
+      internalID: 480600656065176108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgeffect_60
+      rect:
+        serializedVersion: 2
+        x: 1432
+        y: 270
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24fdf19ee86c287d0800000000000000
+      internalID: -2917551291483824318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgeffect_61
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 127
+        width: 68
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8c0b35ed13b50140800000000000000
+      internalID: 4685347928330144908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgeffect_62
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 53
+        width: 102
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 365619e45edf89ea0800000000000000
+      internalID: -5865659353342581405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgeffect_63
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 127
+        width: 67
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a34db2c40d4d4b60800000000000000
+      internalID: 7731920818107401128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgeffect_64
+      rect:
+        serializedVersion: 2
+        x: 661
+        y: 53
+        width: 102
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08c656c5417d4e550800000000000000
+      internalID: 6189308270363372672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgeffect_65
+      rect:
+        serializedVersion: 2
+        x: 1039
+        y: 127
+        width: 68
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a7bc6dcdc9484530800000000000000
+      internalID: 3839399830596925348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgeffect_66
+      rect:
+        serializedVersion: 2
+        x: 1165
+        y: 53
+        width: 102
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 499ec43c4ade1daa0800000000000000
+      internalID: -6137863525222258284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgeffect_67
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 27
+        width: 26
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdbd96be330f05760800000000000000
+      internalID: 7444714289827011551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgeffect_68
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 41
+        width: 69
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e97cb5d3867b7600800000000000000
+      internalID: 467097294961670629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgeffect_69
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 23
+        width: 87
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ad385ca8e6e96f30800000000000000
+      internalID: 4569437183942344103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgeffect_70
+      rect:
+        serializedVersion: 2
+        x: 804
+        y: 41
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1806d2499d9569250800000000000000
+      internalID: 5951042748645466241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgeffect_71
+      rect:
+        serializedVersion: 2
+        x: 947
+        y: 22
+        width: 87
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e75ea531511ef710800000000000000
+      internalID: 1728838347447490535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgeffect_72
+      rect:
+        serializedVersion: 2
+        x: 1308
+        y: 41
+        width: 69
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c5da1fb930afb220800000000000000
+      internalID: 2503896087721072064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgeffect_73
+      rect:
+        serializedVersion: 2
+        x: 1450
+        y: 22
+        width: 62
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e32d0fc00d4ad5bf0800000000000000
+      internalID: -333929583878286786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgeffect_74
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 0
+        width: 38
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 547a2d76f65904d50800000000000000
+      internalID: 6719534949752547141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgeffect_75
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 0
+        width: 37
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5546cf0ec1549e110800000000000000
+      internalID: 1290638758554395733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgeffect_76
+      rect:
+        serializedVersion: 2
+        x: 1085
+        y: 0
+        width: 38
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54c7ac1a25fbbd350800000000000000
+      internalID: 6042633686670277701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      bgeffect_0: -7859156154148126583
+      bgeffect_1: 6869177652041633294
+      bgeffect_10: 7358111640369602219
+      bgeffect_11: -3798870775925038405
+      bgeffect_12: 4425579082874586834
+      bgeffect_13: 474703695545218309
+      bgeffect_14: 5642640809275946702
+      bgeffect_15: -7266843715197990564
+      bgeffect_16: 6926927267706562975
+      bgeffect_17: -5645510494234148746
+      bgeffect_18: 4004436565499215773
+      bgeffect_19: -4378696567361960971
+      bgeffect_2: 6547692866252722648
+      bgeffect_20: 5316048987769924142
+      bgeffect_21: 6411157685521735127
+      bgeffect_22: -7041046586001243176
+      bgeffect_23: 8143634534741747530
+      bgeffect_24: 4850627651530713453
+      bgeffect_25: 1963076915624111362
+      bgeffect_26: 8355429241140304707
+      bgeffect_27: 1573134067054902993
+      bgeffect_28: 8822119036271182546
+      bgeffect_29: -4178381238004591609
+      bgeffect_3: -3403713365400907108
+      bgeffect_30: 6379858078081104628
+      bgeffect_31: 6972983078221886843
+      bgeffect_32: 7822855225906287479
+      bgeffect_33: 9040427747982977207
+      bgeffect_34: -6643671911160850303
+      bgeffect_35: 5833244425366389044
+      bgeffect_36: 6819117624386060352
+      bgeffect_37: -5552405863903414502
+      bgeffect_38: -6083649230662065153
+      bgeffect_39: -2677192504990180921
+      bgeffect_4: 1583109543485609735
+      bgeffect_40: -3318761869950245520
+      bgeffect_41: -7530710852041065
+      bgeffect_42: 3697651227482969047
+      bgeffect_43: 5657047025690263492
+      bgeffect_44: -6627150096822870449
+      bgeffect_45: 5368485599504331602
+      bgeffect_46: -899008271978845158
+      bgeffect_47: 3652757815919149606
+      bgeffect_48: -4994329375183712915
+      bgeffect_49: 3631356128722412835
+      bgeffect_5: -9066838850929127666
+      bgeffect_50: 4664402319331683178
+      bgeffect_51: -4142528146367396427
+      bgeffect_52: 3225450513630282857
+      bgeffect_53: -6564566817547569324
+      bgeffect_54: 5358855548108466465
+      bgeffect_55: -4906726312568447813
+      bgeffect_56: 4937499648295562985
+      bgeffect_57: -5058054854238471522
+      bgeffect_58: -4094552049773291995
+      bgeffect_59: 480600656065176108
+      bgeffect_6: -2108341995849594605
+      bgeffect_60: -2917551291483824318
+      bgeffect_61: 4685347928330144908
+      bgeffect_62: -5865659353342581405
+      bgeffect_63: 7731920818107401128
+      bgeffect_64: 6189308270363372672
+      bgeffect_65: 3839399830596925348
+      bgeffect_66: -6137863525222258284
+      bgeffect_67: 7444714289827011551
+      bgeffect_68: 467097294961670629
+      bgeffect_69: 4569437183942344103
+      bgeffect_7: 4737537704674198594
+      bgeffect_70: 5951042748645466241
+      bgeffect_71: 1728838347447490535
+      bgeffect_72: 2503896087721072064
+      bgeffect_73: -333929583878286786
+      bgeffect_74: 6719534949752547141
+      bgeffect_75: 1290638758554395733
+      bgeffect_76: 6042633686670277701
+      bgeffect_8: 1215152253453772835
+      bgeffect_9: 5438123983808667207
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
