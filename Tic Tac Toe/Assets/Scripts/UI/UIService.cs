@@ -16,13 +16,22 @@ namespace TicTacToe.UI
         [SerializeField] private GameObject connectingUI;
         [SerializeField] private TextMeshProUGUI lobbyCodeText;
 
+        [SerializeField] private GameObject settingScreen;
+        [SerializeField] private Button settingButton;
+
+
         [SerializeField] private Button closeButton;
+
+        [SerializeField] private Slider bgmSlider;
+        [SerializeField] private Slider sfxSlider;
 
         private EventService eventService;
         private void Awake()
         {
             closeButton.onClick.AddListener(CloseGame);
+            settingButton.onClick.AddListener(ToggleSettingScreen);
             lobbyCodeText.gameObject.SetActive(false);
+
 
             if (!PhotonNetwork.OfflineMode)
             {
@@ -36,6 +45,9 @@ namespace TicTacToe.UI
             gameOverUI.InitializeServices(eventService, gameService);
 
             eventService.OnGameStarted.AddListener(OnGameStarted);
+            bgmSlider.onValueChanged.AddListener(OnBGMVoulmeChanged);
+            sfxSlider.onValueChanged.AddListener(OnSFXVoulmeChanged);
+
         }
 
         public void RemoveEventListeners()
@@ -71,12 +83,47 @@ namespace TicTacToe.UI
 
         private void CloseGame()
         {
+            eventService.OnButtonClickRequested.InvokeEvent();
             photonView.RPC("RPC_LeaveRoom", RpcTarget.All);
         }
         [PunRPC]
         private void RPC_LeaveRoom()
         {
             PhotonNetwork.LoadLevel("Lobby");
+        }
+
+        private void ToggleSettingScreen()
+        {
+            eventService.OnButtonClickRequested.InvokeEvent();
+            if (settingScreen.activeSelf)
+            {
+                settingScreen.SetActive(false);
+            }
+            else
+            {
+                settingScreen.SetActive(true);
+            }
+        }
+
+        private void OnSFXVoulmeChanged(float value)
+        {
+            eventService.OnSFXVolumeChanged.InvokeEvent(value);
+        }
+
+        private void OnBGMVoulmeChanged(float value)
+        {
+            eventService.OnBGMVolumeChanged.InvokeEvent(value);
+        }
+
+        public void SetAudioSliderValues(float bgmVol, float sfxVol)
+        {
+            bgmSlider.value = bgmVol;
+            sfxSlider.value = sfxVol;
+        }
+
+        private void OnDestroy()
+        {
+            photonView.RPC("RPC_LeaveRoom", RpcTarget.All);
         }
     }
 }

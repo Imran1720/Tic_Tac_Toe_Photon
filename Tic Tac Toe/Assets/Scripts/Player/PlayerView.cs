@@ -64,7 +64,7 @@ namespace TicTacToe.Player
         {
             int localPlayerID = PhotonNetwork.LocalPlayer.ActorNumber;
             playerController.OnNetworkSpawn(localPlayerID);
-            photonView.RPC("RPC_UpdateCurrentPlayer", Photon.Pun.RpcTarget.All, PlayerType.CROSS);
+
         }
 
         private void AddEventListeners()
@@ -72,7 +72,7 @@ namespace TicTacToe.Player
             eventService.OnGameEnded.AddListener(OnGameEnd);
             eventService.OnRematch.AddListener(OnRematchRpc);
             eventService.OnTileClicked.AddListener(OnTileClicked);
-            eventService.OnPlayerTurnChanged.AddListener(UpdatePlayerTurn);
+            //eventService.OnPlayerTurnChanged.AddListener(UpdatePlayerTurn);
             eventService.OnPlayerClickDetected.AddListener(OnPlayerClickDetectionHandeler);
         }
 
@@ -81,18 +81,24 @@ namespace TicTacToe.Player
             eventService.OnGameEnded.RemoveListener(OnGameEnd);
             eventService.OnRematch.RemoveListener(OnRematchRpc);
             eventService.OnTileClicked.RemoveListener(OnTileClicked);
-            eventService.OnPlayerTurnChanged.RemoveListener(UpdatePlayerTurn);
+            //eventService.OnPlayerTurnChanged.RemoveListener(UpdatePlayerTurn);
             eventService.OnPlayerClickDetected.RemoveListener(OnPlayerClickDetectionHandeler);
         }
 
         private void OnTileClicked(Vector2Int grid, PlayerType playerType)
         {
-            eventService.OnRequestTileClickSound.InvokeEvent();
+            RequestClickSound();
             if (playerController.IsTileSpawnable(grid))
             {
                 SpawnObjectRpc(grid.x, grid.y, playerType);
             }
-            photonView.RPC("Rpc_HandleTileClick", RpcTarget.All, grid.x, grid.y, playerType);
+            //photonView.RPC("Rpc_HandleTileClick", RpcTarget.All, grid.x, grid.y, playerType);
+            Rpc_HandleTileClick(grid.x, grid.y, playerType);
+        }
+
+        public void RequestClickSound()
+        {
+            eventService.OnRequestTileClickSound.InvokeEvent();
         }
 
         private void OnPlayerClickDetectionHandeler(Vector2Int grid, PlayerType localPlayer)
@@ -110,6 +116,7 @@ namespace TicTacToe.Player
 
                 if (timer <= 0 && playerController.GetCurrentPlayablePlayer() != PlayerType.NONE && playerController.GetCurrentPlayablePlayer() != playerController.GetLocalPlayerType())
                 {
+
                     playerController.PerformAITurn();
                 }
             }
@@ -156,7 +163,9 @@ namespace TicTacToe.Player
         [PunRPC]
         private void RPC_TriggerGameStartRpc()
         {
-            eventService.OnGameStarted.InvokeEvent(playerController.GetLocalPlayerType());
+            //photonView.RPC("RPC_UpdateCurrentPlayer", Photon.Pun.RpcTarget.All, PlayerType.CROSS);
+            eventService.OnGameStarted.InvokeEvent(PlayerType.CROSS);
+            UpdateCurrentPlayerOverNetwork(PlayerType.CROSS);
         }
 
         public void GameTie()
@@ -193,10 +202,10 @@ namespace TicTacToe.Player
             eventService.OnDisableInteraction.InvokeEvent();
         }
 
-        private void UpdatePlayerTurn(PlayerType playerType)
-        {
-            playerController.UpdatePlayablePlayer(playerType);
-        }
+        ///private void UpdatePlayerTurn(PlayerType playerType)
+        //{
+        //    playerController.UpdatePlayablePlayer(playerType);
+        //}
 
         public void GameWon(PlayerType playerType)
         {
@@ -235,12 +244,15 @@ namespace TicTacToe.Player
         [PunRPC]
         private void RPC_UpdateCurrentPlayer(PlayerType playerType)
         {
+            playerController.UpdatePlayablePlayer(playerType);
             eventService.OnPlayerTurnChanged.InvokeEvent(playerType);
+
         }
 
         public void UpdateCurrentPlayerOverNetwork(PlayerType playerType)
         {
             photonView.RPC("RPC_UpdateCurrentPlayer", Photon.Pun.RpcTarget.All, playerType);
+            eventService.OnBoardHighlightRequested.InvokeEvent(playerType);
         }
 
         public void updateNextPlayerOverNetwork(PlayerType playerType)

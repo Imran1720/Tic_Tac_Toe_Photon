@@ -5,6 +5,8 @@ namespace TicTacToe.Board
 {
     public class BoardView : MonoBehaviour
     {
+        [SerializeField] private GameObject boardHighlight;
+
         [SerializeField] private GridTile clickableTilePrefab;
         public void SpawnTile(Vector2 position, Quaternion roation, int gridX, int gridY, EventService eventService)
         {
@@ -14,6 +16,16 @@ namespace TicTacToe.Board
         }
 
         private void MakeChildToCurrentObject(Transform childTransform) => childTransform.SetParent(transform, false);
+
+        public void EnableBoardHighlight()
+        {
+            boardHighlight.SetActive(true);
+        }
+
+        public void DisableBoardHighlight()
+        {
+            boardHighlight?.SetActive(false);
+        }
 
     }
 }

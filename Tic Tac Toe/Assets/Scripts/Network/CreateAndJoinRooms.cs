@@ -13,8 +13,8 @@ public class CreateAndJoinRooms : MonoBehaviourPunCallbacks
     [SerializeField] private TMP_InputField joinCode;
     [SerializeField] private TextMeshProUGUI connectingMessage;
 
-    [SerializeField] private Button createRoom;
     [SerializeField] private Button joinRoom;
+    [SerializeField] private Button createRoom;
 
     [SerializeField] private Button MultiplayerButton;
     [SerializeField] private Button closeMultiplayerButton;
@@ -24,8 +24,11 @@ public class CreateAndJoinRooms : MonoBehaviourPunCallbacks
 
     [SerializeField] private GameObject connectingScreen;
 
-    [SerializeField] private GameObject MultiplayerScreen;
     [SerializeField] private GameObject lobbyScreen;
+    [SerializeField] private GameObject MultiplayerScreen;
+
+    [SerializeField] private GameObject passwordWaringBoard;
+    [SerializeField] private GameObject roomFullWaringBoard;
 
     private bool isConnectedAndReady = false;
 
@@ -42,6 +45,8 @@ public class CreateAndJoinRooms : MonoBehaviourPunCallbacks
         easyModeButton.onClick.AddListener(StartEasyMode);
         mediumModeButton.onClick.AddListener(StartMediumMode);
         closeMultiplayerButton.onClick.AddListener(DisconnectFromServer);
+        roomCode.onSelect.AddListener(HidePasswordWarning);
+        joinCode.onSelect.AddListener(HideRoomWarning);
 
         if (PhotonNetwork.IsConnected && !PhotonNetwork.OfflineMode)
         {
@@ -53,6 +58,15 @@ public class CreateAndJoinRooms : MonoBehaviourPunCallbacks
         }
     }
 
+    public override void OnJoinRoomFailed(short returnCode, string message)
+    {
+        roomFullWaringBoard.SetActive(true);
+    }
+
+    public override void OnCreateRoomFailed(short returnCode, string message)
+    {
+        passwordWaringBoard.SetActive(true);
+    }
     private void OpenMultiplayerScreen()
     {
         MultiplayerScreen.SetActive(true);
@@ -112,7 +126,15 @@ public class CreateAndJoinRooms : MonoBehaviourPunCallbacks
 
     public override void OnJoinedRoom()
     {
-        PhotonNetwork.LoadLevel("Tic_Tac_Toe");
+        if (PhotonNetwork.OfflineMode)
+        {
+            PhotonNetwork.LoadLevel("Tic_Tac_Toe_Solo");
+            isStartSoloModeRequested = false;
+        }
+        else
+        {
+            PhotonNetwork.LoadLevel("Tic_Tac_Toe");
+        }
     }
 
     private void DisconnectFromServer()
@@ -124,14 +146,13 @@ public class CreateAndJoinRooms : MonoBehaviourPunCallbacks
 
     public override void OnDisconnected(DisconnectCause cause)
     {
+        MultiplayerScreen.SetActive(false);
+
         if (isStartSoloModeRequested)
         {
             PhotonNetwork.OfflineMode = true;
             PhotonNetwork.JoinRoom("offlineRoom");
-            PhotonNetwork.LoadLevel("Tic_Tac_Toe_Solo");
-            isStartSoloModeRequested = false;
         }
-
     }
 
     private void StartEasyMode()
@@ -157,9 +178,17 @@ public class CreateAndJoinRooms : MonoBehaviourPunCallbacks
         else
         {
             PhotonNetwork.OfflineMode = true;
-            PhotonNetwork.JoinRoom(null);
-            PhotonNetwork.LoadLevel("Tic_Tac_Toe_Solo");
+            PhotonNetwork.JoinRoom("offlineRoom");
         }
     }
 
+    private void HidePasswordWarning(string str)
+    {
+        passwordWaringBoard.SetActive(false);
+    }
+
+    private void HideRoomWarning(string str)
+    {
+        roomFullWaringBoard.SetActive(false);
+    }
 }

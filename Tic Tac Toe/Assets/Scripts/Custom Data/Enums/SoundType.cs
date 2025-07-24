@@ -5,6 +5,9 @@ namespace TicTacToe.Audio
         BGM,
         CLICK,
         WIN,
-        LOSE
+        LOSE,
+        TURN,
+        BUTTON,
+        TIE
     }
 }

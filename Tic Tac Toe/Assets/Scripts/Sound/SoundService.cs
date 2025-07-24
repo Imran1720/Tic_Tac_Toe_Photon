@@ -15,30 +15,37 @@ namespace TicTacToe.Audio
 
         private AudioClipSO audioClipSO;
 
-        public SoundService(GameService gameService, AudioClipSO audioClipSO)
+        public SoundService(EventService eventService, AudioClipSO audioClipSO, AudioSource bgm, AudioSource sfx)
         {
             this.audioClipSO = audioClipSO;
 
-            eventService = gameService.GetEventService();
-            bgmAudioSource = gameService.GetBGMAudioSource();
-            sfxAudioSource = gameService.GetSFXAudioSource();
+            this.eventService = eventService;
+            bgmAudioSource = bgm;
+            sfxAudioSource = sfx;
 
-            AddEventListeners();
             StartBGM();
         }
 
         public void AddEventListeners()
         {
+            eventService.OnBoardHighlightRequested.AddListener(OnBoardHighlighted);
             eventService.OnRequestTileClickSound.AddListener(OnClickDetected);
             eventService.OnGameWon.AddListener(OnGameWin);
             eventService.OnGameTied.AddListener(OnGameTie);
+            eventService.OnButtonClickRequested.AddListener(PlayButtonClick);
+            eventService.OnBGMVolumeChanged.AddListener(BGMVolumeChanged);
+            eventService.OnSFXVolumeChanged.AddListener(SFXVolumeChanged);
         }
 
         public void RemoveEventListeners()
         {
-            eventService.OnRequestTileClickSound.AddListener(OnClickDetected);
-            eventService.OnGameWon.AddListener(OnGameWin);
-            eventService.OnGameTied.AddListener(OnGameTie);
+            eventService.OnBoardHighlightRequested.RemoveListener(OnBoardHighlighted);
+            eventService.OnRequestTileClickSound.RemoveListener(OnClickDetected);
+            eventService.OnGameWon.RemoveListener(OnGameWin);
+            eventService.OnGameTied.RemoveListener(OnGameTie);
+            eventService.OnButtonClickRequested.RemoveListener(PlayButtonClick);
+            eventService.OnBGMVolumeChanged.RemoveListener(BGMVolumeChanged);
+            eventService.OnSFXVolumeChanged.RemoveListener(SFXVolumeChanged);
         }
 
         private void StartBGM()
@@ -84,7 +91,35 @@ namespace TicTacToe.Audio
             }
         }
 
+        public void PlayButtonClick()
+        {
+            PlaySfx(SoundType.BUTTON);
+        }
+
+        public Vector2 GetAudioVolumes()
+        {
+            return new Vector2(bgmAudioSource.volume, sfxAudioSource.volume);
+        }
+
+        private void BGMVolumeChanged(float volume)
+        {
+            bgmAudioSource.volume = volume;
+        }
+
+        private void SFXVolumeChanged(float volume)
+        {
+            sfxAudioSource.volume = volume;
+        }
+
         private void OnClickDetected() => PlaySfx(SoundType.CLICK);
-        private void OnGameTie() => PlaySfx(SoundType.LOSE);
+        private void OnGameTie() => PlaySfx(SoundType.TIE);
+        private void OnBoardHighlighted(PlayerType player)
+        {
+            Debug.Log(player == GameService.Instance.GetLocalPlayerType());
+            if (GameService.Instance.GetLocalPlayerType() == player)
+            {
+                PlaySfx(SoundType.TURN);
+            }
+        }
     }
 }

@@ -1,5 +1,6 @@
 using System;
 using TicTacToe.Core;
+using TicTacToe.Player;
 using TicTacToe.Utility;
 using TicTacToe.Utility.Events;
 using UnityEngine;
@@ -11,6 +12,7 @@ namespace TicTacToe.Board
         private int columns;
         private float gridSize;
 
+        private EventService eventService;
         private BoardView boardView;
 
         public BoardController(BoardView boardView, GridData gridData, EventService eventService)
@@ -18,6 +20,8 @@ namespace TicTacToe.Board
             this.boardView = boardView;
             InitializeData(gridData);
             SpawnBoardTiles(eventService);
+
+            eventService.OnBoardHighlightRequested.AddListener(ToggleBoardHighlight);
         }
 
         private void InitializeData(GridData gridData)
@@ -42,5 +46,29 @@ namespace TicTacToe.Board
         {
             return new Vector2(gridY * gridSize - gridSize, gridSize - gridX * gridSize);
         }
+
+
+        private void ToggleBoardHighlight(PlayerType playerType)
+        {
+            if (GameService.Instance.GetLocalPlayerType() == playerType)
+            {
+                EnableBoardHighlight();
+            }
+            else
+            {
+                DisableBoardHighlight();
+            }
+        }
+
+        public void EnableBoardHighlight()
+        {
+            boardView.EnableBoardHighlight();
+        }
+
+        public void DisableBoardHighlight()
+        {
+            boardView.DisableBoardHighlight();
+        }
+
     }
 }

@@ -33,7 +33,7 @@ namespace TicTacToe.Player
 
         }
 
-        public void CreateAIController() => ticTacTieAI = new TicTacTieAIController(playerTypeGrid, .5f,winDataSO);
+        public void CreateAIController() => ticTacTieAI = new TicTacTieAIController(playerTypeGrid, .5f, winDataSO);
 
         public void OnNetworkSpawn(int localClientId)
         {
@@ -64,7 +64,6 @@ namespace TicTacToe.Player
 
         public void PerformAITurn()
         {
-
             if (!IsGameOver())
             {
                 Vector2Int aiMove = ticTacTieAI.GetMove();
@@ -90,6 +89,7 @@ namespace TicTacToe.Player
 
             if (IsTie())
             {
+                UpdateNextPlayer(currentPlayablePlayerType);
                 playerView.GameTie();
             }
         }
@@ -123,12 +123,12 @@ namespace TicTacToe.Player
 
         public void OnRematch()
         {
+            gameTied = false;
+            ResetGrid();
             if (PhotonNetwork.OfflineMode)
             {
                 ticTacTieAI.InitializePriorityGrid();
             }
-            gameTied = false;
-            ResetGrid();
             SetCurrentPlayablePlayer(nextPlayer);
         }
 

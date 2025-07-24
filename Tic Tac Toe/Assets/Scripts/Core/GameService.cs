@@ -1,4 +1,5 @@
 using Photon.Pun;
+using System;
 using TicTacToe.Audio;
 using TicTacToe.Board;
 using TicTacToe.Player;
@@ -40,15 +41,25 @@ namespace TicTacToe.Core
         private void Start()
         {
             eventService = new EventService();
-            soundService = new SoundService(this, audioClipSO);
-            boardService = new BoardService(boardPrefab, transform, gridData, eventService);
             playerService = new PlayerService(transform, eventService, playerView, winDataSO);
+            boardService = new BoardService(boardPrefab, transform, gridData, eventService);
+            soundService = new SoundService(eventService, audioClipSO, bgmAudioSource, sfxAudioSource);
+            soundService.AddEventListeners();
             uiService.InitilizeService(eventService, this);
 
             if (PhotonNetwork.OfflineMode)
             {
                 playerService.StartOfflineMode();
             }
+
+            SetVolumeInUI();
+        }
+
+        private void SetVolumeInUI()
+        {
+            Vector2 volumes = soundService.GetAudioVolumes();
+
+            uiService.SetAudioSliderValues(volumes.x, volumes.y);
         }
 
         public EventService GetEventService() => eventService;
