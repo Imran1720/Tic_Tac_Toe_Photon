@@ -84,7 +84,8 @@ namespace TicTacToe.UI
 
         private void ShowPlayerYouText(PlayerType playerType)
         {
-            switch (playerType)
+
+            switch (GameService.Instance.GetLocalPlayerType())
             {
                 case PlayerType.CROSS:
                     crossYouText.gameObject.SetActive(true);

@@ -115,7 +115,6 @@ namespace TicTacToe.Audio
         private void OnGameTie() => PlaySfx(SoundType.TIE);
         private void OnBoardHighlighted(PlayerType player)
         {
-            Debug.Log(player == GameService.Instance.GetLocalPlayerType());
             if (GameService.Instance.GetLocalPlayerType() == player)
             {
                 PlaySfx(SoundType.TURN);

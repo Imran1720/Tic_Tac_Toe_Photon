@@ -92,8 +92,8 @@ namespace TicTacToe.Player
             {
                 SpawnObjectRpc(grid.x, grid.y, playerType);
             }
-            //photonView.RPC("Rpc_HandleTileClick", RpcTarget.All, grid.x, grid.y, playerType);
-            Rpc_HandleTileClick(grid.x, grid.y, playerType);
+            photonView.RPC("Rpc_HandleTileClick", RpcTarget.All, grid.x, grid.y, playerType);
+            //Rpc_HandleTileClick(grid.x, grid.y, playerType);
         }
 
         public void RequestClickSound()

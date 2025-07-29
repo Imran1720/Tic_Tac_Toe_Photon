@@ -1,4 +1,5 @@
 using Photon.Pun;
+using System.Collections;
 using TicTacToe.Core;
 using TicTacToe.Player;
 using TicTacToe.Utility.Events;
@@ -19,6 +20,8 @@ namespace TicTacToe.UI
         [SerializeField] private GameObject settingScreen;
         [SerializeField] private Button settingButton;
 
+        [SerializeField] private GameObject playerLeftScreen;
+        [SerializeField] private TextMeshProUGUI playerLeftScreenMessage;
 
         [SerializeField] private Button closeButton;
 
@@ -26,6 +29,8 @@ namespace TicTacToe.UI
         [SerializeField] private Slider sfxSlider;
 
         private EventService eventService;
+        private bool isPlayerLeaving = false;
+
         private void Awake()
         {
             closeButton.onClick.AddListener(CloseGame);
@@ -84,11 +89,18 @@ namespace TicTacToe.UI
         private void CloseGame()
         {
             eventService.OnButtonClickRequested.InvokeEvent();
-            photonView.RPC("RPC_LeaveRoom", RpcTarget.All);
+            isPlayerLeaving = true;
+
+            if (PhotonNetwork.InRoom)
+            {
+                PhotonNetwork.LeaveRoom();
+            }
         }
-        [PunRPC]
-        private void RPC_LeaveRoom()
+
+        public override void OnLeftRoom()
         {
+            isPlayerLeaving = false;
+            playerLeftScreen.SetActive(false);
             PhotonNetwork.LoadLevel("Lobby");
         }
 
@@ -121,9 +133,23 @@ namespace TicTacToe.UI
             sfxSlider.value = sfxVol;
         }
 
-        private void OnDestroy()
+        public override void OnPlayerLeftRoom(Photon.Realtime.Player otherPlayer)
         {
-            photonView.RPC("RPC_LeaveRoom", RpcTarget.All);
+            if (!isPlayerLeaving)
+            {
+                StartCoroutine(LeaveRoomAfter(2f));
+            }
+        }
+
+        IEnumerator LeaveRoomAfter(float delay)
+        {
+            playerLeftScreen.SetActive(true);
+            yield return new WaitForSeconds(delay);
+
+            playerLeftScreenMessage.text = "Returning to lobby.";
+
+            yield return new WaitForSeconds(delay);
+            PhotonNetwork.LeaveRoom();
         }
     }
 }
